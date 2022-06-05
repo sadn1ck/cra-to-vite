@@ -15,3 +15,7 @@
 ## Eslint Log
 
 ![eslint log](https://i.imgur.com/dPrvHPI.png)
+
+## Chunk Splitting
+
+![split chunks](https://i.imgur.com/yk1KGq0.png)
