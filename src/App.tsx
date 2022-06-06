@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import type { Sample } from "./types";
+import { TestComponent } from "./components/Test";
 function App() {
   const user: Sample = {
     name: "me",
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <TestComponent />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
