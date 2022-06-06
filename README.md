@@ -19,3 +19,7 @@
 ## Chunk Splitting
 
 ![split chunks](https://i.imgur.com/yk1KGq0.png)
+
+## Default output size
+
+![output size](https://i.imgur.com/otER0Sa.png)

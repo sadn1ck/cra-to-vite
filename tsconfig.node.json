@@ -3,7 +3,8 @@
       "composite": true,
       "module": "ESNext",
       "lib": ["ESNext"],
-      "moduleResolution": "Node"
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
     },
-    "include": ["vite.config.ts"]
+    "include": ["vite.config.ts", "package.json"]
   }
