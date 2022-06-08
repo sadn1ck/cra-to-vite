@@ -9,11 +9,13 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          if (id.includes("node_modules")){
-            if (id.includes("react")){
-              return "vendor_react";
-            }
-            return "vendor";
+          if (id.includes("node_modules")) {
+            const pkgName = (id.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1]);
+            return pkgName;
+          }
+          else if (id.includes("components")) {
+            const compName = (id.match(/[\\/]components[\\/](.*?)([\\/]|$)/)[1]);
+            return compName.split(".")[0];
           }
         }
       }
